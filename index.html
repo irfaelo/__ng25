@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,26 @@
 
     <style>
         :root {
-        --es-shadow: 0 4px 3px -2px #0000009e;
+            --es-shadow: 0 4px 3px -2px #0000009e;
+            --es-round: 10px;
         }
 
-        nav{
-            margin :10px;
-            border-radius: 10px;
+        main {
+            margin: 0 5vw;
+        }
+
+        nav {
+            margin: 10px 0;
+            border-radius: var(--es-round);
             background: linear-gradient(178deg, #64656f, #361968);
-            color:aliceblue;
+            color: aliceblue;
             font-family: arial;
             box-shadow: var(--es-shadow);
         }
 
-        nav ul li{ 
+        nav ul li {
             margin: 10px;
-            padding: 5px 10px;  
+            padding: 5px 10px;
             border-radius: 9px;
             color: aliceblue;
             font-weight: bold;
@@ -29,37 +35,55 @@
             transition: .5s all;
             display: inline-block;
             list-style: none;
-            background: radial-gradient(transparent, transparent);;
+            background: radial-gradient(transparent, transparent);
+            ;
         }
 
-        nav ul li:hover{ 
+        nav ul li:hover {
             cursor: pointer;
             background: radial-gradient(#ffffff59, transparent);
         }
 
         .portal {
-            border-radius: 5px;
+            border-radius: var(--es-round);
             background-color: #64656f;
             padding: 20px;
-            width: 50%; 
+            width: 50%;
             box-shadow: var(--es-shadow);
+        }
+
+        .im-round {
+            
+            border-radius: var(--es-round); 
+            box-shadow: var(--es-shadow);
+            width: 100%;
+            margin:10px 0;
         }
     </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Discos</li>
-            <li>Historia</li>
-            <li>Concierto</li>
-            <li>Merch</li>
-        </ul>
-    </nav>
-    <div>
-        <div class="portal">
-            ES UN ELEMENTO QUE ES LA MITAD
+    <main>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Discos</li>
+                <li>Historia</li>
+                <li>Concierto</li>
+                <li>Merch</li>
+            </ul>
+        </nav>
+        <div>
+            <div class="portal">
+                <b>ES UN ELEMENTO QUE ES LA MITAD</b>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia minus laborum doloremque error soluta cupiditate inventore numquam quasi quae obcaecati ex vel veniam iure, deserunt assumenda voluptatum voluptatem tenetur?
+                </p>
+            </div>
         </div>
-    </div>
+
+        <img src="https://live.staticflickr.com/65535/49814635382_957b3cda24_b.jpg" alt="" class="im-round">
+    </main>
 </body>
+
 </html>
