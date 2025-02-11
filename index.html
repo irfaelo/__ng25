@@ -6,12 +6,17 @@
     <title>Ejemplo de subida a Vercel</title>
 
     <style>
+        :root {
+        --es-shadow: 0 4px 3px -2px #0000009e;
+        }
+
         nav{
             margin :10px;
             border-radius: 10px;
             background: linear-gradient(178deg, #64656f, #361968);
             color:aliceblue;
             font-family: arial;
+            box-shadow: var(--es-shadow);
         }
 
         nav ul li{ 
@@ -31,6 +36,14 @@
             cursor: pointer;
             background: radial-gradient(#ffffff59, transparent);
         }
+
+        .portal {
+            border-radius: 5px;
+            background-color: #64656f;
+            padding: 20px;
+            width: 50%; 
+            box-shadow: var(--es-shadow);
+        }
     </style>
 </head>
 <body>
@@ -44,7 +57,9 @@
         </ul>
     </nav>
     <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Unde nostrum quaerat ea delectus sequi mollitia commodi cumque porro, voluptates maxime, fugiat ipsam iure placeat. Sed iste quas nam.
+        <div class="portal">
+            ES UN ELEMENTO QUE ES LA MITAD
+        </div>
     </div>
 </body>
 </html>
