@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+}
+
+/* Estilos del contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Para que las columnas se acomoden bien en pantallas pequeñas */
+  min-height: 100vh;
+}
+
+/* Barra lateral izquierda */
+.sidebar-left {
+  width: 250px; /* Ancho fijo */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-left ul {
+  list-style-type: none;
+}
+
+.sidebar-left ul li {
+  margin: 10px 0;
+}
+
+.sidebar-left ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1; /* Ocupa el espacio restante */
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Barra lateral derecha */
+.sidebar-right {
+  width: 250px; /* Ancho fijo */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-right ul {
+  list-style-type: none;
+}
+
+.sidebar-right ul li {
+  margin: 10px 0;
+}
+
+.sidebar-right ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsivo: en pantallas pequeñas, las columnas se reorganizan */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambia la dirección de las columnas a vertical */
+  }
+
+  .sidebar-left, .sidebar-right {
+    width: 100%; /* Las barras laterales ocupan el 100% en pantallas pequeñas */
+    margin-bottom: 20px; /* Separación entre las barras laterales */
+  }
+
+  .main-content {
+    padding: 10px; /* Reducimos el padding para pantallas pequeñas */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Barra lateral izquierda -->
+    <aside class="sidebar-left">
+      <ul>
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <li><a href="#">Enlace 4</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <h1>Contenido Principal</h1>
+      
+
+<p>
+    La responsabilidad responsable de la responsividad responsiva responsable de la responsibilidad responsiva y la regulación responsable del comportamiento de la reactividad responsiva en un mundo cada vez más determinado por la adaptación ininterrumpida a las tecnologías de la transformación responsable. La complejidad de la responsabilidad se hace evidente cuando el compromiso de la responsibilidad se enfrenta a los desafíos de la responsividad continua, la cual exige una reacción oportuna y responsable a las exigencias del entorno digital, sin perder la ética de la adaptación responsable. El concepto de responsabilidad, multiplicado por el impacto de la responsividad global, genera una reflexión profunda sobre cómo la gestión responsable de los recursos puede verse afectada por la velocidad y la eficacia de la respuesta responsiva ante los cambios que definen nuestra era moderna.
+</p>
+    </main>
+
+    <!-- Barra lateral derecha -->
+    <aside class="sidebar-right">
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </aside>
+  </div>
+
+</body>
+</html>
