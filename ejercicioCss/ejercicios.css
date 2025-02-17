@@ -1,0 +1,68 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* Ejercicio 1: Herencia Dinámica en la Barra de Navegación */
+nav a {
+    text-decoration: none;
+    color: inherit; /* Se hereda el color del body */
+}
+
+/* Cambiar color de los enlaces cuando se pasa el mouse */
+nav a:hover {
+    color: darkred; /* Color cuando se pasa el mouse por encima */
+}
+
+/* Contenedores principales */
+.contenedor {
+    color: blue;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.subcontenedor {
+    color: red;
+    padding: 15px;
+    border: 1px dashed gray;
+}
+
+/* Ejercicio 2: Modificar Herencia del button en el .subcontenedor */
+.subcontenedor button {
+    color: white; /* El botón tendrá color blanco y no heredará el color rojo del .subcontenedor */
+    background-color: gray;
+}
+
+/* Botón */
+button {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Ejercicio 3: Variables CSS y inherit en Múltiples Elementos */
+:root {
+    --color-global: #4CAF50; /* Definir una variable global de color */
+}
+
+/* Usar la variable global para color en .contenedor y sus párrafos */
+.contenedor {
+    color: var(--color-global); /* Aplicar la variable global */
+}
+
+.contenedor p {
+    color: inherit; /* Los párrafos dentro de .contenedor heredan el color global */
+}
+
+/* Ejercicio 4: Reset de Herencia con unset */
+.articulo span {
+    color: unset; /* Elimina la herencia del color en el <span> y usa el valor por defecto */
+}
+
+/* Ejercicio 5: Evitar Herencia Global con all: unset; */
+footer p {
+    all: unset; /* Elimina todos los estilos heredados, reset de estilos */
+}
